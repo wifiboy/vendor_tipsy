@@ -99,8 +99,14 @@ PRODUCT_PACKAGES += \
     CMFileManager
 
 #    SlimFileManager removed until updated
-
 # Extra tools
+
+# Chromium prebuilt
+ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
+-include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
+endif
+
+# CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
     openvpn \
     libsepol \
@@ -170,10 +176,6 @@ ifndef TIPSY_BUILD_TYPE
     TIPSY_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
 endif
 
-# Chromium Prebuilt
-ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
--include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
-endif
 
 # Set all versions
 TIPSY_VERSION := tipsy-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-$(TIPSY_POSTFIX)

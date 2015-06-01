@@ -28,7 +28,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/tipsy/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/tipsy/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/tipsy/prebuilt/common/bin/50-tipsy.sh:system/addon.d/50-tipsy.sh \
+    vendor/tipsy/prebuilt/common/bin/50-slim.sh:system/addon.d/50-slim.sh \
     vendor/tipsy/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh \
     vendor/tipsy/prebuilt/common/etc/backup.conf:system/etc/backup.conf
 

@@ -90,7 +90,8 @@ PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
     DashClock \
-    CMFileManager
+    CMFileManager \
+    KernelAdiutor
 
 #    SlimFileManager removed until updated
 

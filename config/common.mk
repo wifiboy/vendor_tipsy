@@ -122,6 +122,12 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/tipsy/overlay/common
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/media/bootanimation.zip:system/media/bootanimation.zip
 
+# SuperSU
+PRODUCT_COPY_FILES += \
+	vendor/tipsy/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+	vendor/tipsy/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+
+
 # Versioning System
 # tipsyLP first version.
 PRODUCT_VERSION_MAJOR = 6.0

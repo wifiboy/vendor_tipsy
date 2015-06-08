@@ -120,7 +120,13 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/tipsy/overlay/common
 
 # Bootanimation support
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/media/bootanimation.zip:system/media/bootanimation.zip
+	$(LOCAL_PATH)/media/bootanimation.zip:system/media/bootanimation.zip
+
+# SuperSU
+PRODUCT_COPY_FILES += \
+	vendor/tesla/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+	vendor/tesla/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+
 
 # Versioning System
 # tipsyLP first version.

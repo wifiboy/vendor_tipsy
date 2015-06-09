@@ -128,6 +128,14 @@ PRODUCT_COPY_FILES += \
 	vendor/tipsy/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
 	vendor/tipsy/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
+# NovaLauncher
+PRODUCT_COPY_FILES += \
+vendor/tipsy/prebuilt/common/app/Nova33.apk:system/app/Nova33.apk
+
+# Adaway
+PRODUCT_COPY_FILES += \
+vendor/tipsy/prebuilt/common/app/adaway.apk:system/app/adaway.apk
+
 
 # Versioning System
 # tipsyLP first version.

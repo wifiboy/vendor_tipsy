@@ -38,7 +38,7 @@ PRODUCT_COPY_FILES += \
 
 # tipsy-specific init file
 PRODUCT_COPY_FILES += \
-    vendor/tipsy/prebuilt/common/etc/init.local.rc:root/init.tipsy.rc
+    vendor/tipsy/prebuilt/common/etc/init.local.rc:root/init.slim.rc
 
 # Copy latinime for gesture typing
 PRODUCT_COPY_FILES += \
@@ -143,13 +143,17 @@ vendor/tipsy/prebuilt/common/app/LuckyPatcher.apk:system/app/LuckyPatcher.apk
 PRODUCT_COPY_FILES += \
 vendor/tipsy/prebuilt/common/app/kerneladiutor.apk:system/app/kerneladiutor.apk
 
+# Layers Manager
+PRODUCT_COPY_FILES += \
+vendor/tipsy/prebuilt/common/app/layersmanager.apk:system/app/layersmanager.apk
+
 
 
 # Versioning System
 # tipsyLP first version.
 PRODUCT_VERSION_MAJOR = 5.1.1
 PRODUCT_VERSION_MINOR = beta
-PRODUCT_VERSION_MAINTENANCE = v1
+PRODUCT_VERSION_MAINTENANCE = v1.1
 ifdef TIPSY_BUILD_EXTRA
     TIPSY_POSTFIX := -$(TIPSY_BUILD_EXTRA)
 endif

@@ -90,8 +90,7 @@ PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
     DashClock \
-    CMFileManager \
-    KernelAdiutor
+    CMFileManager
 
 #    SlimFileManager removed until updated
 
@@ -139,6 +138,11 @@ vendor/tipsy/prebuilt/common/app/adaway.apk:system/app/adaway.apk
 # LuckyPatcher
 PRODUCT_COPY_FILES += \
 vendor/tipsy/prebuilt/common/app/LuckyPatcher.apk:system/app/LuckyPatcher.apk
+
+# Kerneladiutor
+PRODUCT_COPY_FILES += \
+vendor/tipsy/prebuilt/common/app/kerneladiutor.apk:system/app/kerneladiutor.apk
+
 
 
 # Versioning System

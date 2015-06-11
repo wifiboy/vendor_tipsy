@@ -135,6 +135,10 @@ vendor/tipsy/prebuilt/common/app/Nova33.apk:system/app/Nova33.apk
 PRODUCT_COPY_FILES += \
 vendor/tipsy/prebuilt/common/app/adaway.apk:system/app/adaway.apk
 
+# Kerneladiutor
+PRODUCT_COPY_FILES += \
+vendor/tipsy/prebuilt/common/app/kerneladiutor.apk:system/app/kerneladiutor.apk
+
 
 # Versioning System
 # tipsyLP first version.

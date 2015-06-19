@@ -103,6 +103,7 @@ PRODUCT_PACKAGES += \
 # Extra tools
 PRODUCT_PACKAGES += \
     openvpn \
+    libsepol \
     e2fsck \
     mke2fs \
     tune2fs \

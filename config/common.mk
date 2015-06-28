@@ -165,14 +165,14 @@ vendor/tipsy/prebuilt/common/app/layersmanager.apk:system/app/layersmanager.apk
 # Versioning System
 # tipsyLP first version.
 PRODUCT_VERSION_MAJOR = 5.1.1
-PRODUCT_VERSION_MINOR = beta
-PRODUCT_VERSION_MAINTENANCE = v1.1
+PRODUCT_VERSION_MINOR = Hammered
+PRODUCT_VERSION_MAINTENANCE = v1.0
 ifdef TIPSY_BUILD_EXTRA
     TIPSY_POSTFIX := -$(TIPSY_BUILD_EXTRA)
 endif
 ifndef TIPSY_BUILD_TYPE
-    TIPSY_BUILD_TYPE := BETA
-    PLATFORM_VERSION_CODENAME := BETA
+    TIPSY_BUILD_TYPE := RC
+    PLATFORM_VERSION_CODENAME := RC
     TIPSY_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
 endif
 

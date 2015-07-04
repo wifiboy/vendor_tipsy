@@ -161,10 +161,17 @@ vendor/tipsy/prebuilt/common/app/layersmanager.apk:system/app/layersmanager.apk
 # Versioning System
 # tipsyLP first version.
 PRODUCT_VERSION_MAJOR = 5.1.1
+<<<<<<< HEAD
 PRODUCT_VERSION_MINOR = Hammered
 PRODUCT_VERSION_MAINTENANCE = v1.0
 ifdef TIPSY_BUILD_EXTRA
     TIPSY_POSTFIX := -$(TIPSY_BUILD_EXTRA)
+=======
+PRODUCT_VERSION_MINOR = alpha
+PRODUCT_VERSION_MAINTENANCE = 0.5
+ifdef SLIM_BUILD_EXTRA
+    SLIM_POSTFIX := -$(SLIM_BUILD_EXTRA)
+>>>>>>> slim/lp5.1
 endif
 ifndef TIPSY_BUILD_TYPE
     TIPSY_BUILD_TYPE := RC

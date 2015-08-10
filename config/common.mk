@@ -165,7 +165,7 @@ vendor/tipsy/prebuilt/common/app/layersmanager.apk:system/app/layersmanager.apk
 # tipsyLP first version.
 PRODUCT_VERSION_MAJOR = 5.1.1
 PRODUCT_VERSION_MINOR = Intoxicated
-PRODUCT_VERSION_MAINTENANCE = v1.4
+PRODUCT_VERSION_MAINTENANCE = v1.5-testing
 ifdef TIPSY_BUILD_EXTRA
     TIPSY_POSTFIX := -$(TIPSY_BUILD_EXTRA)
 endif

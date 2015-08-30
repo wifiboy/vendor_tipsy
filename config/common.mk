@@ -161,10 +161,6 @@ vendor/tipsy/prebuilt/common/app/kerneladiutor.apk:system/app/kerneladiutor.apk
 PRODUCT_COPY_FILES += \
 vendor/tipsy/prebuilt/common/app/layersmanager.apk:system/app/layersmanager.apk
 
-# CameraNext
-PRODUCT_COPY_FILES += \
-vendor/tipsy/prebuilt/common/app/CameraNextModV22.apk:system/app/CameraNextModV22.apk
-
 # Versioning System
 # tipsyLP first version.
 PRODUCT_VERSION_MAJOR = 5.1.1

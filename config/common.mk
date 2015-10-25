@@ -132,6 +132,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 vendor/tipsy/prebuilt/common/app/Nova33.apk:system/app/Nova33.apk
 
+#Es File Explorer
+PRODUCT_COPY_FILES += \
+    vendor/tipsy/prebuilt/common/app/ESFE.apk:system/app/ESFE.apk
+
 # Adaway
 PRODUCT_COPY_FILES += \
 vendor/tipsy/prebuilt/common/app/adaway.apk:system/app/adaway.apk

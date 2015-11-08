@@ -97,8 +97,7 @@ PRODUCT_PACKAGES += \
     LockClock \
     DashClock \
     CMFileManager \
-    WallpaperPicker \
-    Snap
+    WallpaperPicker
 
 #    SlimFileManager removed until updated
 # Extra tools

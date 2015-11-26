@@ -1,11 +1,11 @@
-# slim functions that extend build/envsetup.sh
+# tipsy functions that extend build/envsetup.sh
 
-function slim_device_combos()
+function tipsy_device_combos()
 {
     local T list_file variant device
 
     T="$(gettop)"
-    list_file="${T}/vendor/slim/slim.devices"
+    list_file="${T}/vendor/tipsy/tipsy.devices"
     variant="userdebug"
 
     if [[ $1 ]]
@@ -27,45 +27,45 @@ function slim_device_combos()
     if [[ ! -f "${list_file}" ]]
     then
         echo "unable to find device list: ${list_file}"
-        list_file="${T}/vendor/slim/slim.devices"
+        list_file="${T}/vendor/tipsy/tipsy.devices"
         echo "defaulting device list file to: ${list_file}"
     fi
 
     while IFS= read -r device
     do
-        add_lunch_combo "slim_${device}-${variant}"
+        add_lunch_combo "tipsy_${device}-${variant}"
     done < "${list_file}"
 }
 
-function slim_rename_function()
+function tipsy_rename_function()
 {
-    eval "original_slim_$(declare -f ${1})"
+    eval "original_tipsy_$(declare -f ${1})"
 }
 
-function _slim_build_hmm() #hidden
+function _tipsy_build_hmm() #hidden
 {
     printf "%-8s %s" "${1}:" "${2}"
 }
 
-function slim_append_hmm()
+function tipsy_append_hmm()
 {
-    HMM_DESCRIPTIVE=("${HMM_DESCRIPTIVE[@]}" "$(_slim_build_hmm "$1" "$2")")
+    HMM_DESCRIPTIVE=("${HMM_DESCRIPTIVE[@]}" "$(_tipsy_build_hmm "$1" "$2")")
 }
 
-function slim_add_hmm_entry()
+function tipsy_add_hmm_entry()
 {
     for c in ${!HMM_DESCRIPTIVE[*]}
     do
         if [[ "${1}" == $(echo "${HMM_DESCRIPTIVE[$c]}" | cut -f1 -d":") ]]
         then
-            HMM_DESCRIPTIVE[${c}]="$(_slim_build_hmm "$1" "$2")"
+            HMM_DESCRIPTIVE[${c}]="$(_tipsy_build_hmm "$1" "$2")"
             return
         fi
     done
-    slim_append_hmm "$1" "$2"
+    tipsy_append_hmm "$1" "$2"
 }
 
-function slimremote()
+function tipsyremote()
 {
     local proj pfx project
 
@@ -74,7 +74,7 @@ function slimremote()
         echo "Not in a git directory. Please run this from an Android repository you wish to set up."
         return
     fi
-    git remote rm slim 2> /dev/null
+    git remote rm tipsy 2> /dev/null
 
     proj="$(pwd -P | sed "s#$ANDROID_BUILD_TOP/##g")"
 
@@ -84,8 +84,8 @@ function slimremote()
 
     project="${proj//\//_}"
 
-    git remote add slim "git@github.com:SlimRoms/$pfx$project"
-    echo "Remote 'slim' created"
+    git remote add tipsy "git@github.com:TipsyOs/$pfx$project"
+    echo "Remote 'tipsy' created"
 }
 
 function cmremote()
@@ -148,7 +148,7 @@ function cafremote()
 function slim_push()
 {
     local branch ssh_name path_opt proj
-    branch="lp5.1"
+    branch="mm6.0"
     ssh_name="slim_review"
     path_opt=
 
@@ -171,21 +171,21 @@ function slim_push()
 }
 
 
-slim_rename_function hmm
+tipsy_rename_function hmm
 function hmm() #hidden
 {
     local i T
     T="$(gettop)"
-    original_slim_hmm
+    original_tipsy_hmm
     echo
 
-    echo "vendor/slim extended functions. The complete list is:"
-    for i in $(grep -P '^function .*$' "$T/vendor/slim/build/envsetup.sh" | grep -v "#hidden" | sed 's/function \([a-z_]*\).*/\1/' | sort | uniq); do
+    echo "vendor/tipsy extended functions. The complete list is:"
+    for i in $(grep -P '^function .*$' "$T/vendor/tipsy/build/envsetup.sh" | grep -v "#hidden" | sed 's/function \([a-z_]*\).*/\1/' | sort | uniq); do
         echo "$i"
     done |column
 }
 
-slim_append_hmm "slimremote" "Add a git remote for matching SLIM repository"
-slim_append_hmm "cmremote" "Add a git remote for matching CM repository"
-slim_append_hmm "aospremote" "Add git remote for matching AOSP repository"
-slim_append_hmm "cafremote" "Add git remote for matching CodeAurora repository."
+tipsy_append_hmm "tipsyremote" "Add a git remote for matching Tipsy repository"
+tipsy_append_hmm "cmremote" "Add a git remote for matching CM repository"
+tipsy_append_hmm "aospremote" "Add git remote for matching AOSP repository"
+tipsy_append_hmm "cafremote" "Add git remote for matching CodeAurora repository."

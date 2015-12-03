@@ -88,6 +88,7 @@ PRODUCT_PACKAGES += \
     SlimLauncher \
     LatinIME \
     BluetoothExt \
+    LockClock \
     DashClock
 
 #    SlimFileManager removed until updated

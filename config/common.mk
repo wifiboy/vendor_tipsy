@@ -64,6 +64,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
     Development \
+    LatinIME \
     SpareParts \
     su
 
@@ -86,7 +87,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SlimOTA \
     SlimLauncher \
-    LatinIME \
     BluetoothExt \
     LockClock \
     DashClock

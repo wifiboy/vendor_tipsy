@@ -120,6 +120,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/tipsy/overlay/common
 
+# Viper4Android
+PRODUCT_COPY_FILES += \
+   vendor/tipsy/prebuilt/common/bin/audio_policy.sh:system/audio_policy.sh \
+   vendor/tipsy/prebuilt/common/addon.d/95-LolliViPER.sh:system/addon.d/95-LolliViPER.sh \
+   vendor/tipsy/prebuilt/common/su.d/50viper.sh:system/su.d/50viper.sh \
+   vendor/tipsy/prebuilt/common/app/Viper4Android/Viper4Android.apk:system/priv-app/Viper4Android/Viper4Android.apk 
+
 # Bootanimation 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/media/bootanimation.zip:system/media/bootanimation.zip

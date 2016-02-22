@@ -89,6 +89,7 @@ PRODUCT_PACKAGES += \
     SlimLauncher \
     BluetoothExt \
     LockClock \
+    OmniSwitch \
     DashClock
 
 #    SlimFileManager removed until updated

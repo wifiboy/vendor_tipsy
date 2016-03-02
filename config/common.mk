@@ -164,8 +164,8 @@ vendor/tipsy/prebuilt/common/app/Layers_backup_restore.apk:system/app/Layers_bac
 # Versioning System
 # tipsyLP first version.
 PRODUCT_VERSION_MAJOR = 6.0.1
-PRODUCT_VERSION_MINOR = Westvleteren_REL
-PRODUCT_VERSION_MAINTENANCE = v3.2
+PRODUCT_VERSION_MINOR = Maredsous
+PRODUCT_VERSION_MAINTENANCE = v3.3
 ifdef TIPSY_BUILD_EXTRA
     TIPSY_POSTFIX := -$(TIPSY_BUILD_EXTRA)
 endif

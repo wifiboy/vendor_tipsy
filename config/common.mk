@@ -165,7 +165,7 @@ vendor/tipsy/prebuilt/common/app/Layers_backup_restore.apk:system/app/Layers_bac
 # tipsyLP first version.
 PRODUCT_VERSION_MAJOR = 6.0.1
 PRODUCT_VERSION_MINOR = Judas
-PRODUCT_VERSION_MAINTENANCE = v3.5
+PRODUCT_VERSION_MAINTENANCE = v3.6
 ifdef TIPSY_BUILD_EXTRA
     TIPSY_POSTFIX := -$(TIPSY_BUILD_EXTRA)
 endif

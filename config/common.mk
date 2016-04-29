@@ -162,10 +162,10 @@ PRODUCT_COPY_FILES += \
 vendor/tipsy/prebuilt/common/app/Layers_backup_restore.apk:system/app/Layers_backup_restore.apk
 
 # Versioning System
-# tipsyLP first version.
+# tipsyM first version.
 PRODUCT_VERSION_MAJOR = 6.0.1
-PRODUCT_VERSION_MINOR = Chimay
-PRODUCT_VERSION_MAINTENANCE = v3.7
+PRODUCT_VERSION_MINOR = Belle-Vue
+PRODUCT_VERSION_MAINTENANCE = v3.8
 ifdef TIPSY_BUILD_EXTRA
     TIPSY_POSTFIX := -$(TIPSY_BUILD_EXTRA)
 endif

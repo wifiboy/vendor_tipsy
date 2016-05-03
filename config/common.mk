@@ -121,6 +121,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/tipsy/overlay/common
 
+# Busybox
+PRODUCT_PACKAGES += \
+    Busybox
+
 # Viper4Android
 PRODUCT_COPY_FILES += \
    vendor/tipsy/prebuilt/common/bin/audio_policy.sh:system/audio_policy.sh \

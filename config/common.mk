@@ -43,6 +43,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/tipsy/prebuilt/common/etc/init.local.rc:root/init.tipsy.rc
 
+# Include LatinIME dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/tipsy/overlay/dictionaries
+
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
     vendor/tipsy/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel

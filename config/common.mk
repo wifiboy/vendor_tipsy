@@ -38,6 +38,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/tipsy/prebuilt/common/etc/init.local.rc:root/init.slim.rc
 
+# Include LatinIME dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/tipsy/overlay/dictionaries
+
 # Copy latinime for gesture typing
 PRODUCT_COPY_FILES += \
     vendor/tipsy/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so

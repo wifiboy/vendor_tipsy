@@ -79,8 +79,7 @@ PRODUCT_PACKAGES += \
 
 # AudioFX
 PRODUCT_PACKAGES += \
-    AudioFX \
-    Eleven
+    AudioFX
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \

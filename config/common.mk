@@ -162,10 +162,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 vendor/tipsy/prebuilt/common/app/adaway.apk:system/app/adaway.apk
 
-# Kerneladiutor
-PRODUCT_COPY_FILES += \
-vendor/tipsy/prebuilt/common/app/kerneladiutor.apk:system/app/kerneladiutor.apk
-
 # Layers Manager
 PRODUCT_COPY_FILES += \
 vendor/tipsy/prebuilt/common/app/layersmanager.apk:system/app/layersmanager.apk

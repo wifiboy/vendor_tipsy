@@ -107,7 +107,19 @@ endif
 ifeq (true,$(CLANG_O3))
   OPT5 := (clang_O3)
 endif
-GCC_OPTIMIZATION_LEVELS := $(OPT1)$(OPT2)$(OPT3)$(OPT4)$(OPT5)
+ifeq (true,$(USE_PIPE))
+  OPT6 := (pipe)
+endif
+ifeq (true,$(ENABLE_SANITIZE))
+  OPT7 := (sanitize)
+endif
+ifeq (true,$(CORTEX_TUNINGS))
+  OPT8 := (cortex)
+endif
+ifeq (true,$(POLLY_OPTIMIZATION))
+  OPT9 := (polly)
+endif
+GCC_OPTIMIZATION_LEVELS := $(OPT1)$(OPT2)$(OPT3)$(OPT4)$(OPT5)$(OPT6)$(OPT7)$(OPT8)$(OPT9)
 ifneq (,$(GCC_OPTIMIZATION_LEVELS))
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.uber.flags=$(GCC_OPTIMIZATION_LEVELS)

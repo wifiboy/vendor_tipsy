@@ -114,7 +114,7 @@ ifeq (true,$(ENABLE_SANITIZE))
   OPT7 := (sanitize)
 endif
 ifeq (true,$(CORTEX_TUNINGS))
-  OPT8 := (cortex)
+  OPT8 := (cortex-a57)
 endif
 ifeq (true,$(POLLY_OPTIMIZATION))
   OPT9 := (polly)

@@ -163,10 +163,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 vendor/tipsy/prebuilt/common/app/adaway.apk:system/app/adaway.apk
 
-# Layers Manager
-PRODUCT_COPY_FILES += \
-vendor/tipsy/prebuilt/common/app/layersmanager.apk:system/app/layersmanager.apk
-
 # Layers_backup_restore
 PRODUCT_COPY_FILES += \
 vendor/tipsy/prebuilt/common/app/Layers_backup_restore.apk:system/app/Layers_backup_restore.apk

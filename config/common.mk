@@ -163,9 +163,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 vendor/tipsy/prebuilt/common/app/adaway.apk:system/app/adaway.apk
 
-# Layers_backup_restore
-PRODUCT_COPY_FILES += \
-vendor/tipsy/prebuilt/common/app/Layers_backup_restore.apk:system/app/Layers_backup_restore.apk
 
 # Versioning System
 # tipsyM first version.

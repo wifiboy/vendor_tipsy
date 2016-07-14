@@ -94,7 +94,8 @@ PRODUCT_PACKAGES += \
     LockClock \
     OmniSwitch \
     DashClock \
-    KernelAdiutor
+    KernelAdiutor \
+    masquerade
 
 #    SlimFileManager removed until updated
 

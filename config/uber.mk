@@ -102,10 +102,10 @@ ifeq (true,$(KRAIT_TUNINGS))
   OPT3 := ($(TARGET_CPU_VARIANT))
 endif
 ifeq (true,$(ENABLE_GCCONLY))
-  OPT4 := (gcconly)
+  OPT4 := (gcc)
 endif
 ifeq (true,$(CLANG_O3))
-  OPT5 := (clang_O3)
+  OPT5 := (O3)
 endif
 ifeq (true,$(USE_PIPE))
   OPT6 := (pipe)
@@ -114,12 +114,24 @@ ifeq (true,$(ENABLE_SANITIZE))
   OPT7 := (sanitize)
 endif
 ifeq (true,$(CORTEX_TUNINGS))
-  OPT8 := (cortex-a57)
+  OPT8 := (cortex)
 endif
 ifeq (true,$(POLLY_OPTIMIZATION))
   OPT9 := (polly)
 endif
-GCC_OPTIMIZATION_LEVELS := $(OPT1)$(OPT2)$(OPT3)$(OPT4)$(OPT5)$(OPT6)$(OPT7)$(OPT8)$(OPT9)
+ifeq (true,$(ENABLE_PTHREAD))
+  OPT10 := (pthread)
+endif
+ifeq (true,$(ENABLE_IPA_ANALYSER))
+  OPT11 := (ipa)
+endif
+ifeq (true,$(ENABLE_GOMP))
+  OPT12 := (gomp)
+endif
+ifeq (true,$(ENABLE_EXTRAGCC))
+  OPT13 := (extragcc)
+endif
+GCC_OPTIMIZATION_LEVELS := $(OPT1)$(OPT2)$(OPT3)$(OPT4)$(OPT5)$(OPT6)$(OPT7)$(OPT8)$(OPT9)$(OPT10)$(OPT11)$(OPT12)$(OPT13)
 ifneq (,$(GCC_OPTIMIZATION_LEVELS))
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.uber.flags=$(GCC_OPTIMIZATION_LEVELS)

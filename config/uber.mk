@@ -91,6 +91,10 @@ ADDITIONAL_BUILD_PROPERTIES += \
     ro.uber.kernel=$(AARCH64_KERNEL_PROP)
 endif
 
+#f100cleveland
+export KBUILD_BUILD_USER := dustin
+export KBUILD_BUILD_HOST := Otis-Box
+
 # UBERTC OPTIMIZATIONS 
 ifeq (true,$(STRICT_ALIASING))
   OPT1 := (strict)

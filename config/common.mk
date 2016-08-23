@@ -178,8 +178,8 @@ vendor/tipsy/prebuilt/common/app/adaway.apk:system/app/adaway.apk
 # Versioning System
 # tipsyM first version.
 PRODUCT_VERSION_MAJOR = 6.0.1
-PRODUCT_VERSION_MINOR = frunk
-PRODUCT_VERSION_MAINTENANCE = v4.6
+PRODUCT_VERSION_MINOR = Stella
+PRODUCT_VERSION_MAINTENANCE = v4.7
 ifdef TIPSY_BUILD_EXTRA
     TIPSY_POSTFIX := $(TIPSY_BUILD_EXTRA)
 endif

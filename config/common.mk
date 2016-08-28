@@ -92,6 +92,7 @@ PRODUCT_PACKAGES += \
     SlimLauncher \
     BluetoothExt \
     LockClock \
+    OmniStyle \
     OmniSwitch \
     DashClock \
     KernelAdiutor \

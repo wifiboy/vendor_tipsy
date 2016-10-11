@@ -182,8 +182,8 @@ vendor/tipsy/prebuilt/common/app/adaway.apk:system/app/adaway.apk
 # Versioning System
 # tipsyM first version.
 PRODUCT_VERSION_MAJOR = 6.0.1
-PRODUCT_VERSION_MINOR = Picon
-PRODUCT_VERSION_MAINTENANCE = v4.8
+PRODUCT_VERSION_MINOR = Vino
+PRODUCT_VERSION_MAINTENANCE = v4.9
 ifdef TIPSY_BUILD_EXTRA
     TIPSY_POSTFIX := $(TIPSY_BUILD_EXTRA)
 endif

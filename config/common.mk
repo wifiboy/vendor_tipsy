@@ -100,9 +100,6 @@ PRODUCT_PACKAGES += \
 
 #    SlimFileManager removed until updated
 
-## Slim DayNight theming overlays
-include vendor/tipsy/overlays/overlays.mk
-
 # Extra tools
 PRODUCT_PACKAGES += \
     openvpn \

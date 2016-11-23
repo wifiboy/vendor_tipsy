@@ -41,7 +41,7 @@ PRODUCT_COPY_FILES += \
 
 # Tipsy-specific init file
 PRODUCT_COPY_FILES += \
-    vendor/tipsy/prebuilt/common/etc/init.local.rc:root/init.slim.rc
+    vendor/tipsy/prebuilt/common/etc/init.local.rc:root/init.tipsy.rc
 
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \

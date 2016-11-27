@@ -84,10 +84,16 @@ PRODUCT_PACKAGES += \
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
-    SlimLauncher \
-    SlimWallpapers \
+    BluetoothExt \
+    KernelAdiutor \
     LatinIME \
-    BluetoothExt
+    masquerade \
+    SlimLauncher \
+    SlimWallpapers
+
+
+
+    
 
 #    SlimFileManager removed until updated
 

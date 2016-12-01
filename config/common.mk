@@ -77,6 +77,11 @@ PRODUCT_PACKAGES += \
     PhaseBeam \
     Chromium
 
+# Include explicitly to work around GMS issues
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full \
+    librsjni
+
 # AudioFX
 PRODUCT_PACKAGES += \
     AudioFX

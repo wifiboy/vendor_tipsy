@@ -92,9 +92,7 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     KernelAdiutor \
     LatinIME \
-    masquerade \
-    SlimLauncher \
-    SlimWallpapers
+    masquerade
 
 
 

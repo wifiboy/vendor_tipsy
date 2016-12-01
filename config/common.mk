@@ -131,6 +131,10 @@ endif
 PRODUCT_COPY_FILES += \
 vendor/tipsy/prebuilt/common/app/Nova.apk:system/app/Nova.apk
 
+# Adaway
+PRODUCT_COPY_FILES += \
+vendor/tipsy/prebuilt/common/app/adaway.apk:system/app/adaway.apk
+
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
     libffmpeg_extractor \

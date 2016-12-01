@@ -129,6 +129,10 @@ PRODUCT_PACKAGES += \
     mkfs.exfat
 endif
 
+# NovaLauncher
+PRODUCT_COPY_FILES += \
+vendor/tipsy/prebuilt/common/app/Nova.apk:system/app/Nova.apk
+
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
     libffmpeg_extractor \

@@ -92,7 +92,8 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     KernelAdiutor \
     LatinIME \
-    masquerade
+    masquerade \
+    Tavern
 
 
 

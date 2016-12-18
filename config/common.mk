@@ -92,14 +92,12 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     KernelAdiutor \
     LatinIME \
+    LockClock \
     masquerade \
     Tavern
-
-
-
     
 
-#    SlimFileManager removed until updated
+# SlimFileManager removed until updated
 
 ifneq ($(DISABLE_SLIM_FRAMEWORK), true)
 ## Slim Framework

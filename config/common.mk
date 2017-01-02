@@ -131,10 +131,15 @@ PRODUCT_PACKAGES += \
     mkfs.exfat
 endif
 
-# NovaLauncher
+# Pixel Launcher
 PRODUCT_COPY_FILES += \
-vendor/tipsy/prebuilt/common/app/Nova.apk:system/app/Nova.apk
-
+    vendor/tipsy/prebuilt/common/app/PixelLauncherPrebuilt.apk:system/priv-app/PixelLauncher/PixelLauncherPrebuilt.apk \
+    vendor/tipsy/prebuilt/common/app/WallpaperPickerGooglePrebuilt.apk:system/app/PixelLauncher/WallpaperPickerGooglePrebuilt.apk
+	    
+# Google Dialer 
+PRODUCT_COPY_FILES += \
+    vendor/tipsy/prebuilt/common/app/googledialer.apk:system/priv-app/GoogleDialer/googledialer.apk
+	
 # Adaway
 PRODUCT_COPY_FILES += \
 vendor/tipsy/prebuilt/common/app/adaway.apk:system/app/adaway.apk
